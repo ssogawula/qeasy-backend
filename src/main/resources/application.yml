@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: qeasy
+  profiles:
+    active: dev
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/qeasy_easy_db
+    username: app_user
+    password: Passw0rd123
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 1
+    url: jdbc:postgresql://localhost:5432/qeasy_easy_db
+    user: app_user
+    password: Passw0rd123
+
+  security:
+    jwt:
+      secret: and0LXNlY3JldC1rZXlzZG5qc2Rmd2Rqa2Z3bDs==
+      expiration: 3600000
+    cors:
+      allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200}
+
+  logging:
+    level:
+      root: INFO
+      org.springframework.web: DEBUG

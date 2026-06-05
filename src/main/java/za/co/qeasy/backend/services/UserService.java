@@ -2,9 +2,9 @@ package za.co.qeasy.backend.services;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import za.co.qeasy.backend.domain.UserRegistrationResponse;
-import za.co.qeasy.backend.domain.UserRegistrationRequest;
-import za.co.qeasy.backend.domain.UserResponse;
+import za.co.qeasy.backend.domain.response.UserRegistrationResponse;
+import za.co.qeasy.backend.domain.request.UserRegistrationRequest;
+import za.co.qeasy.backend.domain.response.UserResponse;
 
 public interface UserService {
 

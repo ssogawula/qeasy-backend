@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
-import za.co.qeasy.backend.domain.LoginRequest;
-import za.co.qeasy.backend.domain.LoginResponse;
+import za.co.qeasy.backend.domain.request.LoginRequest;
+import za.co.qeasy.backend.domain.response.LoginResponse;
 
 @RestController
 @RequestMapping("/api/v1/auth")

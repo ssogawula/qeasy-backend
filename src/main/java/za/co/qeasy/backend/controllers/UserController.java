@@ -8,9 +8,9 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import za.co.qeasy.backend.domain.UserRegistrationRequest;
-import za.co.qeasy.backend.domain.UserRegistrationResponse;
-import za.co.qeasy.backend.domain.UserResponse;
+import za.co.qeasy.backend.domain.request.UserRegistrationRequest;
+import za.co.qeasy.backend.domain.response.UserRegistrationResponse;
+import za.co.qeasy.backend.domain.response.UserResponse;
 import za.co.qeasy.backend.services.UserService;
 
 @RestController
