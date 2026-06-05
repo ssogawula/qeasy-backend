@@ -12,7 +12,7 @@ import za.co.qeasy.backend.services.UserService;
 
 @WebFluxTest
 @Import(AppSecurityConfig.class)
-public class AuthControllerTest {
+public class SpringSecurityIntegrationTest {
 
     @Autowired
     WebTestClient webTestClient;
